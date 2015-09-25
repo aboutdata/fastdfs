@@ -65,9 +65,9 @@ fi
 
 LIBS=''
 if [ $OS_BITS -eq 64 ]; then
-  LIBS='-L/usr/lib64'
+  LIBS="$LIBS -L/usr/lib64"
 else
-  LIBS='-L/usr/lib'
+  LIBS="$LIBS -L/usr/lib"
 fi
 
 uname=$(uname)
